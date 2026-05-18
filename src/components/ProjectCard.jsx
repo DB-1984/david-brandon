@@ -7,7 +7,7 @@ export default function ProjectCard({ project, onSelect }) {
         <img
           src={image}
           alt={title}
-          className="w-full object-cover group-hover:scale-105 transition duration-700"
+          className="w-full object-cover group-hover:scale-105 -mt-1 transition duration-700"
         />
       </div>
 

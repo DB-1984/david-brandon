@@ -84,7 +84,7 @@ export const projects = [
     image: epianosImg,
     live: "https://epianos.co.uk",
     repo: "",
-    stack: ["WooCommerce", "PHP", "Stripe", "Opayo"],
+    stack: ["WooCommerce", "PHP", "JS/ES6", "REST API"],
   },
 
   {
