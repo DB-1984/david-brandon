@@ -13,8 +13,8 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
+
     <div className="overflow-hidden font-['Inter'] text-black">
-      <Header />
 
       <Hero />
 
@@ -34,5 +34,6 @@ export default function App() {
         onClose={() => setSelectedProject(null)}
       />
     </div>
+
   );
 }

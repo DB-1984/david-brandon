@@ -2,9 +2,9 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects({ projects, onSelect }) {
   return (
-    <section id="work" className="px-6 py-24 max-w-6xl mx-auto">
+    <section id="work" className="px-6 py-16 max-w-6xl mx-auto">
       <h2 className="text-3xl font-semibold mb-4">Selected work</h2>
-
+      <p className="text-black">Please allow up to a minute for Render hosting</p>
       <div className="grid md:grid-cols-2 mt-16 gap-16">
         {projects.map((project) => (
           <ProjectCard

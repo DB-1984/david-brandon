@@ -1,13 +1,27 @@
-// src/components/Contact.jsx
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-6 py-32 max-w-3xl mx-auto">
-      <h2 className="text-3xl font-semibold mb-6">Get in touch</h2>
+    <section id="contact" className="px-6 py-16 my-16 mx-8 md:max-w-3xl md:mx-auto">
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="text-3xl font-semibold mb-6"
+      >
+        Get in touch
+      </motion.h2>
 
-      <p className="text-gray-600 mb-10">
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="text-gray-600 mb-10"
+      >
         Have a project in mind, or just want to talk shop? Drop me a message.
-      </p>
+      </motion.p>
 
       <form
         action="https://formspree.io/f/xdalddke"
@@ -40,12 +54,14 @@ export default function Contact() {
           className="w-full border-b border-gray-300 py-3 outline-none bg-transparent resize-none"
         />
 
-        <button
+        <motion.button
           type="submit"
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
           className="px-8 py-4 bg-black text-white rounded-full text-sm"
         >
           Send message
-        </button>
+        </motion.button>
       </form>
     </section>
   );
