@@ -8,32 +8,32 @@ import Footer from "./components/Footer";
 import ProjectModal from "./components/ProjectModal";
 import { media } from "./data/media";
 import { projects } from "./data/projects";
+import Background from "./components/Background";
 
 export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
+    <>
+      <div className="overflow-hidden font-['Inter'] text-black">
+        <Hero />
 
-    <div className="overflow-hidden font-['Inter'] text-black">
+        <Projects
+          projects={projects}
+          onSelect={(project) => setSelectedProject(project)}
+        />
 
-      <Hero />
+        <MediaSection media={media} />
 
-      <Projects
-        projects={projects}
-        onSelect={(project) => setSelectedProject(project)}
-      />
+        <Contact />
 
-      <MediaSection media={media} />
+        <Footer />
 
-      <Contact />
-
-      <Footer />
-
-      <ProjectModal
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
-    </div>
-
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      </div>
+    </>
   );
 }

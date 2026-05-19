@@ -5,21 +5,22 @@ import StackRow from "./StackIcons";
 
 export default function Hero() {
   return (
-    <section className="px-6 py-16 lg:mx-auto grid md:grid-cols-2 mx-6 gap-12 items-center">
-
+    <section className="px-6 py-16 bg-white/50 lg:px-16 lg:mx-auto grid md:grid-cols-2 mx-6 gap-12 items-center">
       {/* LEFT: TEXT */}
       <motion.div
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
           Full-stack developer building clean, scalable web applications.
         </h1>
 
         <p className="mt-6 text-base text-black/80 max-w-xl">
-          Hi -I'm David. I design and develop modern web apps and websites using<strong>React, Django, NextJS, WordPress FSE,</strong> and
-          performant backend systems such as <strong>Node, PostgreSQL, MongoDB,</strong> and <strong>Supabase.</strong>
+          Hi -I'm David. I design and develop modern web apps and websites using
+          <strong>React, Django, NextJS, WordPress FSE,</strong> and performant
+          backend systems such as <strong>Node, PostgreSQL, MongoDB,</strong>{" "}
+          and <strong>Supabase.</strong>
         </p>
 
         {/* BUTTONS */}
@@ -41,7 +42,8 @@ export default function Hero() {
 
         {/* STACKS */}
         <p className="mt-10 text-sm text-black leading-relaxed">
-          React · Next.js · Django · Node · PostgreSQL · Tailwind · WordPress FSE · MongoDB
+          React · Next.js · Django · Node · PostgreSQL · Tailwind · WordPress
+          FSE · MongoDB
         </p>
         <StackRow />
       </motion.div>
@@ -59,7 +61,6 @@ export default function Hero() {
           className="object-cover object-top rounded-2xl grayscale hover:grayscale-0 transition duration-700"
         />
       </motion.div>
-
     </section>
   );
 }

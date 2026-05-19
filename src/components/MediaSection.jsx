@@ -28,7 +28,7 @@ export default function MediaSection({ media }) {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className="grid md:grid-cols-2 gap-12 hover:blur-xs"
+        className="grid md:grid-cols-2 gap-12"
       >
         {media.map((itemData) => (
           <motion.div
