@@ -17,7 +17,8 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 text-base text-black/80 max-w-xl">
-          Hi -I'm David. I design and develop modern web apps and websites using
+          Hi - I'm David. I design and develop modern web apps and websites
+          using
           <strong>React, Django, NextJS, WordPress FSE,</strong> and performant
           backend systems such as <strong>Node, PostgreSQL, MongoDB,</strong>{" "}
           and <strong>Supabase.</strong>
@@ -41,10 +42,6 @@ export default function Hero() {
         </div>
 
         {/* STACKS */}
-        <p className="mt-10 text-sm text-black leading-relaxed">
-          React · Next.js · Django · Node · PostgreSQL · Tailwind · WordPress
-          FSE · MongoDB
-        </p>
         <StackRow />
       </motion.div>
 
